@@ -1,5 +1,5 @@
 function countLetters2 (input) {
- var letters = input.split(” “).join(“”).toLowerCase();
+ var letters = input.split(' ').join('').toLowerCase();
  var obj = {
 
  }
@@ -19,4 +19,4 @@ for (var i = 0; i < letters.length; i++) {
 
 
 
-console.log(countLetters2(“lighthouse in the house”));
+console.log(countLetters2('lighthouse in the house'));
