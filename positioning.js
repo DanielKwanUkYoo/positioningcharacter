@@ -1,25 +1,22 @@
-var obj = {
+function countLetters2 (input) {
+ var letters = input.split(” “).join(“”).toLowerCase();
+ var obj = {
 
+ }
+for (var i = 0; i < letters.length; i++) {
+ var letter = letters[i]
+
+ if (letter in obj) {
+
+   obj[letter].push(i);
+ } else {
+   obj[letter] = [i]
+
+ }
+}
+ return obj;
 };
 
-function countLetters (input) {
-  var letters = input.split(" ").join('').toLowerCase().split("")
-
-  for (var i = 0; i < letters.length; i++) {
-    var indexOf = letters.indexOf(letters[i])
-
-    if (obj[letters[i]]) {
-      obj[letters[i]].push(indexOf)
-      } else {
-      obj[letters[i]] = [];
-      obj[letters[i]].push(indexOf);
-      }
-    }
-return obj;
-
-}
 
 
-console.log(countLetters('lighthouse in the house'))
-
-
+console.log(countLetters2(“lighthouse in the house”));
